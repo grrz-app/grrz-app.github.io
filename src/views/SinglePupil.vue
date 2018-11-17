@@ -1,14 +1,13 @@
 <template>
     <div class="home">
-            <h1>HIHIIh</h1>
-            {{id}}
+            <h1>{{pupil.name}}</h1>
     </div>
 </template>
 <script>
 export default {
   name: "pupil",
   props: {
-    id: String
+    pupil: Object
   },
   data(){
       console.log(this.$store)

@@ -15,7 +15,7 @@
       v-for="pupil in pupils"
       v-bind:key="pupil.id">
 
-      <ul>      <router-link :to="{ name: 'pupil', params: { id: pupil.id }}">{{ pupil.name }}</router-link> </ul>
+      <ul>      <router-link :to="{ name: 'pupil', params: { pupil:pupil }}">{{ pupil.name }}</router-link> </ul>
     </div>
   </ol>
 </div>
